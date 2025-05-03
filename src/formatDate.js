@@ -59,8 +59,8 @@ function formatDate(date, fromFormat, toFormat) {
         newPart =
           part === 'YYYY'
             ? oldPart < 30
-              ? 20 + oldPart
-              : 19 + oldPart
+              ? `20${oldPart}`
+              : `19${oldPart}`
             : oldPart;
         break;
       default:
